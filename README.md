@@ -30,3 +30,10 @@ npm test
 ```
 npm run fmt
 ```
+
+## Credits
+Special thanks to:
+* [simonhaenisch](https://github.com/simonhaenisch) to create the plugin and include it into [md-to-pdf](https://github.com/simonhaenisch/md-to-pdf)
+
+## License
+[MIT](./LICENSE)

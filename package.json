@@ -1,11 +1,12 @@
 {
   "name": "marked-emoji",
-  "version": "1.0.0",
+  "version": "1.0.0-SNAPSHOT",
   "description": "Simple plugin to add emoji support",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "fmt": "npx prettier --write index.js test/ package.json"
+    "fmt": "npx prettier --write index.js test/ package.json",
+    "fmt-check": "npx prettier --check index.js test/ package.json"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,7 @@
     "twemoji": "^14.0.2"
   },
   "devDependencies": {
-    "j,est": "^29.3.1",
+    "jest": "^29.3.1",
     "prettier": "^2.8.0",
     "prettier-plugin-organize-imports": "^3.2.1"
   },

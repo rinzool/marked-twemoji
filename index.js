@@ -9,8 +9,8 @@ const twemojiParse = (content) =>
   });
 
 // Configure marked extension
-const markedEmoji = {
-  name: 'emoji',
+const markedTwemoji = {
+  name: 'twemoji',
   level: 'inline',
   start(src) {
     return src.indexOf(':');
@@ -20,16 +20,15 @@ const markedEmoji = {
     const match = rule.exec(src);
     if (match) {
       return {
-        type: 'emoji',
+        type: 'twemoji',
         raw: match[0],
         emoji: match[1],
       };
     }
-    return;
   },
   renderer(token) {
     return twemojiParse(emoji.emojify(token.raw));
   },
 };
 
-module.exports = { markedEmoji };
+module.exports = { markedTwemoji };

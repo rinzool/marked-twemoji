@@ -1,12 +1,13 @@
 {
-  "name": "marked-emoji",
+  "name": "marked-twemoji",
   "version": "1.0.0-SNAPSHOT",
-  "description": "Simple plugin to add emoji support",
+  "description": "Simple plugin to add twemoji support",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "fmt": "npx prettier --write index.js test/ package.json",
-    "fmt-check": "npx prettier --check index.js test/ package.json"
+    "fmt-check": "npx prettier --check index.js test/ package.json",
+    "preversion": "npm run fmt-check && npm test"
   },
   "repository": {
     "type": "git",

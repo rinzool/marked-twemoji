@@ -1,8 +1,8 @@
 const { marked } = require('marked');
-const { markedEmoji } = require('marked-emoji');
+const { markedTwemoji } = require('marked-twemoji');
 
 test('emoji :heart: should be interepreted and replaced with img', () => {
-  marked.use({ extensions: [markedEmoji] });
+  marked.use({ extensions: [markedTwemoji] });
 
   const output = marked(':heart:');
   const expected =

@@ -1,13 +1,13 @@
-# marked-emoji
-A simple plugin to add emojis for marked
+# marked-twemoji
+A simple plugin to add [twemoji](https://github.com/twitter/twemoji) for marked
 
 ## How to use
 
 ```js
 const { marked } = require('marked');
-const { markedEmoji } = require('marked-emoji');
+const { markedTwemoji } = require('marked-twemoji');
 
-marked.use({ extensions: [markedEmoji] });
+marked.use({ extensions: [markedTwemoji] });
 
 marked(':heart:') // <p><img class="emoji" draggable="false" alt="❤️" src="https://twemoji.maxcdn.com/v/14.0.2/svg/2764.svg"/></p>
 ```

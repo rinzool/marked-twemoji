@@ -3,7 +3,8 @@ name: Validate style and tests
 on:
   pull_request:
     paths:
-      - index.js
+      - "**/*.js"
+      - "**/*.ts"
       - package.json
       - test/**
     branches:

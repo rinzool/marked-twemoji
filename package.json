@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "fmt": "npx prettier --write index.js test/ package.json",
-    "fmt-check": "npx prettier --check index.js test/ package.json",
+    "fmt-check": "npx prettier --check index.js index.d.ts test/ package.json",
     "preversion": "npm run fmt-check && npm test"
   },
   "repository": {

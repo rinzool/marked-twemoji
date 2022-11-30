@@ -1,6 +1,6 @@
 {
   "name": "marked-twemoji",
-  "version": "1.0.0-SNAPSHOT",
+  "version": "1.0.0",
   "description": "Simple plugin to add twemoji support",
   "main": "index.js",
   "scripts": {

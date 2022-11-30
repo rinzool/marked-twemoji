@@ -14,6 +14,28 @@ marked(':heart:') // <p><img class="emoji" draggable="false" alt="❤️" src="h
 
 The stylesheet `style.css` is a recommended style for `.emoji` class, but feel free to define yourself
 
+### Md-to-pdf
+
+It is possible to use `marked-twemoji` with [md-to-pdf](https://github.com/simonhaenisch/md-to-pdf/#twemoji) project by creating a custom config.
+* Create a `config.js` file:
+```js
+const { markedTwemoji } = require('marked-twemoji');
+
+module.exports = {
+	css: `
+          .emoji {
+                  background: transparent;
+                  height: 1em;
+                  margin: 0 0.05em 0 0.1em !important;
+                  vertical-align: -0.1em;
+                  width: 1em;
+          }
+        `,
+	marked_extensions: [markedTwemoji],
+};
+```
+* Use md-to-pdf with config file `md-to-pdf --config-file config.js example.md`
+
 ## How does it work
 Based on [this issue](https://github.com/markedjs/marked/issues/233) and [twemoji](https://github.com/twitter/twemoji), I added a custom `marked` extension to convert emojis.
 Basically it looks for `:abc:` pattern, and use twemoji to replace it with an `<img>`

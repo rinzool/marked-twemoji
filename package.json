@@ -1,0 +1,37 @@
+{
+  "name": "marked-twemoji",
+  "version": "1.0.0",
+  "description": "Simple plugin to add twemoji support",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "fmt": "npx prettier --write index.js test/ package.json",
+    "fmt-check": "npx prettier --check index.js index.d.ts test/ package.json",
+    "preversion": "npm run fmt-check && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rinzool/marked-emoji.git"
+  },
+  "author": "Quentin FLEURENT NAMBOT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rinzool/marked-emoji/issues"
+  },
+  "homepage": "https://github.com/rinzool/marked-emoji#readme",
+  "dependencies": {
+    "marked": "^4.2.3",
+    "node-emoji": "^1.11.0",
+    "twemoji": "^14.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "prettier": "^2.8.0",
+    "prettier-plugin-organize-imports": "^3.2.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": true
+  }
+}

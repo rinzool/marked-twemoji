@@ -3,6 +3,12 @@ A simple plugin to add [twemoji](https://github.com/twitter/twemoji) for [marked
 
 ## How to use
 
+First, install plugin
+```
+npm i marked-twemoji
+```
+
+Then add it as an extension for _marked_
 ```js
 const { marked } = require('marked');
 const { markedTwemoji } = require('marked-twemoji');

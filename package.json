@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rinzool/marked-emoji.git"
+    "url": "git+https://github.com/rinzool/marked-twemoji.git"
   },
   "author": "Quentin FLEURENT NAMBOT",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rinzool/marked-emoji/issues"
+    "url": "https://github.com/rinzool/marked-twemoji/issues"
   },
-  "homepage": "https://github.com/rinzool/marked-emoji#readme",
+  "homepage": "https://github.com/rinzool/marked-twemoji#readme",
   "dependencies": {
     "marked": "^4.2.3",
     "node-emoji": "^1.11.0",

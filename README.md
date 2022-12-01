@@ -1,5 +1,5 @@
 # marked-twemoji
-A simple plugin to add [twemoji](https://github.com/twitter/twemoji) for marked
+A simple plugin to add [twemoji](https://github.com/twitter/twemoji) for [marked](https://github.com/markedjs/marked)
 
 ## How to use
 
@@ -13,6 +13,15 @@ marked(':heart:') // <p><img class="emoji" draggable="false" alt="❤️" src="h
 ```
 
 The stylesheet `style.css` is a recommended style for `.emoji` class, but feel free to define yourself
+```css
+.emoji {
+  background: transparent;
+  height: 1em;
+  margin: 0 0.05em 0 0.1em !important;
+  vertical-align: -0.1em;
+  width: 1em;
+}
+```
 
 ### Md-to-pdf
 
@@ -22,16 +31,16 @@ It is possible to use `marked-twemoji` with [md-to-pdf](https://github.com/simon
 const { markedTwemoji } = require('marked-twemoji');
 
 module.exports = {
-	css: `
-          .emoji {
-                  background: transparent;
-                  height: 1em;
-                  margin: 0 0.05em 0 0.1em !important;
-                  vertical-align: -0.1em;
-                  width: 1em;
-          }
-        `,
-	marked_extensions: [markedTwemoji],
+  css: `
+    .emoji {
+            background: transparent;
+            height: 1em;
+            margin: 0 0.05em 0 0.1em !important;
+            vertical-align: -0.1em;
+            width: 1em;
+    }
+  `,
+  marked_extensions: [markedTwemoji],
 };
 ```
 * Use md-to-pdf with config file `md-to-pdf --config-file config.js example.md`
@@ -55,7 +64,7 @@ npm run fmt
 
 ## Credits
 Special thanks to:
-* [simonhaenisch](https://github.com/simonhaenisch) to create the plugin and include it into [md-to-pdf](https://github.com/simonhaenisch/md-to-pdf)
+* [simonhaenisch](https://github.com/simonhaenisch) for helping me creating this plugin and how to include it into [md-to-pdf](https://github.com/simonhaenisch/md-to-pdf)
 
 ## License
 [MIT](./LICENSE)
